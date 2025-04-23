@@ -19,7 +19,7 @@ mkdir /app
 curl -L -o /tmp/${component_name}.zip https://roboshop-artifacts.s3.amazonaws.com/${component_name}-v3.zip
 cd /app
 rm -rf /app/*
-unzip /tmp/catalogue.zip
+unzip /tmp/${component_name}.zip
 cd /app
 }
 
