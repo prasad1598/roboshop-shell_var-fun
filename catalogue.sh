@@ -5,6 +5,6 @@ nodejs
 
 systemd_setup
 
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp ${pwd}/mongo.repo /etc/yum.repos.d/mongo.repo
 dnf install mongodb-mongosh -y
 mongosh --host mongodb-dev.prasaddevops.shop </app/db/master-data.js

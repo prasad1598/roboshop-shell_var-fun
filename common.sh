@@ -44,10 +44,3 @@ app_pre-req
 mvn clean package
 mv target/shipping-1.0.jar shipping.jar
 }
-
-
-hello() {
-echo "file"
-}
-
-hello
