@@ -1,9 +1,9 @@
 pwd=$(pwd)
 
 nodejs() {
-dnf module disable ${component_name} -y
-dnf module enable ${component_name}:20 -y
-dnf install ${component_name} -y
+dnf module disable nodejs -y
+dnf module enable nodejs:20 -y
+dnf install nodejs -y
 app_pre-req
 npm install
 }
@@ -44,3 +44,10 @@ app_pre-req
 mvn clean package
 mv target/shipping-1.0.jar shipping.jar
 }
+
+
+hello() {
+echo "file"
+}
+
+hello
