@@ -23,7 +23,6 @@ unzip /tmp/${component_name}.zip
 cd /app
 }
 
-
 systemd_setup() {
 cp ${pwd}/${component_name}.service /etc/systemd/system/${component_name}.service
 systemctl daemon-reload
