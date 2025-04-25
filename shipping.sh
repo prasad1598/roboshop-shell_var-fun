@@ -3,7 +3,6 @@ source common.sh
 
 java
 
-
 dnf install mysql -y
 mysql -h mysql-dev.prasaddevops.shop -uroot -pRoboShop@1 < /app/db/schema.sql
 mysql -h mysql-dev.prasaddevops.shop -uroot -pRoboShop@1 < /app/db/app-user.sql
